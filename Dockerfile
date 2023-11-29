@@ -4,7 +4,8 @@ WORKDIR /my-space
 COPY package.json  pnpm-lock.yaml* ./
 RUN npm install -g pnpm@8.6.0
 COPY . .
-RUN pnpm run build
+RUN pnpm install
+RUN pnpm build
 
 FROM node:20-alpine as runner
 WORKDIR /my-space
