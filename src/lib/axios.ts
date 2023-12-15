@@ -1,8 +1,8 @@
 /*
  * @Author: W·S
  * @Date: 2022-06-07 16:11:32
- * @LastEditors: W·S
- * @LastEditTime: 2023-04-27 15:56:40
+ * @LastEditors: zhangxuefeng
+ * @LastEditTime: 2023-12-15 18:24:17
  * @Description: Description
  */
 
@@ -24,6 +24,7 @@ const delPending = (config: AxiosRequestConfig<unknown>) => {
 
 const instance = axios.create({
   baseURL: process.env.NEXT_PUBLIC_AGENT_ID,
+  withCredentials: true,
   timeout: 60000,
   headers: {
     'x-requested-with': 'XMLHttpRequest',
