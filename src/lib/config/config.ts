@@ -11,5 +11,5 @@ export const developmentLink = {
 
 // pre
 export const productionLink = {
-  Poc2System: 'http://213.35.109.168:5001/',
+  Poc2System: 'https://pre-user1travelrule-poc2.udpn.io/',
 };
