@@ -1,8 +1,8 @@
 /*
  * @Author: dongwei
  * @Date: 2023-07-28 15:38:21
- * @LastEditors: songyinan songyinan@reddatetech.com
- * @LastEditTime: 2023-09-08 14:21:51
+ * @LastEditors: zhangxuefeng
+ * @LastEditTime: 2024-02-04 14:15:06
  * @Description: Description
  */
 export const developmentLink = {
@@ -11,5 +11,5 @@ export const developmentLink = {
 
 // pre
 export const productionLink = {
-  Poc2System: 'https://pre-user1travelrule-poc2.udpn.io/',
+  Poc2System: 'http://poc2-web.poc2-user1-bn.svc.cluster.local:80/',
 };
