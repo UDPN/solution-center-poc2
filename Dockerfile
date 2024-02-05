@@ -2,6 +2,7 @@ FROM node:20-alpine as builder
 WORKDIR /my-space
 
 COPY package.json  pnpm-lock.yaml* ./
+RUN npm config set registry https://registry.npmmirror.com
 RUN npm install -g pnpm@8.6.0
 COPY . .
 RUN pnpm install
