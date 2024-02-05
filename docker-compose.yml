@@ -1,9 +1,9 @@
 version: '3'
 services:
-  solution-center-poc2-9302:
+  solution-center-poc2:
     image: solution-poc2:v1
     build: ./
-    container_name: solution-center-poc2-9302
+    container_name: solution-center-poc2
     restart: always
     ports:
-      - 9302:3000
+      - 9303:3000
