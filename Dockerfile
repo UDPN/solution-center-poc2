@@ -6,7 +6,7 @@ RUN npm config set registry https://registry.npmmirror.com
 RUN npm install -g pnpm@8.6.0
 COPY . .
 RUN pnpm install
-RUN pnpm build
+RUN pnpm build:dev
 RUN mv /my-space/.next/standalone /my-space/.next/solution-center-poc2
 
 FROM node:20-alpine as runner
