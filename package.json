@@ -8,8 +8,8 @@
   },
   "scripts": {
     "dev": "husky install && cross-env NODE_TYPE=development next dev -p 15001",
-    "build:dev": "rm -rf ./.next && cross-env NODE_TYPE=development next build",
-    "build": "cross-env NODE_TYPE=production next build",
+    "build:dev": "cross-env NODE_TYPE=development next build && rm -rf ./standalone && mv ./.next/standalone ./ && rm -rf ./standalone/public && cp -r ./public ./standalone/ && rm -rf standalone/.next && mv ./.next ./standalone/ && node next-script.js",
+    "build": "cross-env NODE_TYPE=production  next build && rm -rf ./standalone && mv ./.next/standalone ./ && rm -rf ./standalone/public && cp -r ./public ./standalone/ && rm -rf standalone/.next && mv ./.next ./standalone/ && node next-script.js",
     "build:cp": "next build && rm -rf ./standalone && mv ./.next/standalone ./ && rm -rf ./standalone/public && cp -r ./public ./standalone/ && rm -rf standalone/.next && mv ./.next ./standalone/ && node next-script.js",
     "build:tar": "next build && rm -rf ./standalone && mv ./.next/standalone ./ && rm -rf ./standalone/public && cp -r ./public ./standalone/ && rm -rf standalone/.next && mv ./.next ./standalone/ && node next-script.js && tar -czvf standalone.tar.gz standalone",
     "start": "next start",
