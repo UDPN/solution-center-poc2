@@ -59,7 +59,7 @@ const SOLURIONS: NextPage = () => {
         ),
         getItem(
           <a
-            href="/static/UDPN POC Use Case 2 -Implementing Travel Rule -User Manual.pdf"
+            href="/static/POC2 User Manual.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
